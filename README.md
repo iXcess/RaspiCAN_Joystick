@@ -3,6 +3,13 @@
 This tutorial is to allow any raspberry pi device to act as a HID device specifically a Joystick. This project has been created to control Live For Speed using real vehicle CAN Bus drive-by-wire data.
 Reference and credits to [_DATENSCHUTZ_](http://www.isticktoit.net/?p=1383)
 
+### Step 0 - The right kernel
+
+We need to use the 4.4 Kernel
+```
+$ sudo BRANCH=next rpi-update
+```
+
 ### Step 1 - Enabling the required modules and drivers
 
 To enable device tree overlay
