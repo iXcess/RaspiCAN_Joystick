@@ -1,7 +1,7 @@
 # Raspberrypi CAN Joystick Controller
 
 This tutorial is to allow any raspberry pi device to act as a HID device specifically a Joystick. This project has been created to control Live For Speed using real vehicle CAN Bus drive-by-wire data.
-Reference and credits to DATENSCHUTZ @ http://www.isticktoit.net/?p=1383
+Reference and credits to [_DATENSCHUTZ_](http://www.isticktoit.net/?p=1383)
 
 ### Step 1 - Enabling the required modules and drivers
 
@@ -69,3 +69,5 @@ ls /sys/class/udc > UDC
 ```
 
 ### Writing the Python Script to decode the CAN Bus
+
+First of all, for available HID, please use the keycode ("Usage ID (Hex)") from the table 12 on page 53pp of the [_USB HID Usage Tables_](https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf) document. 
