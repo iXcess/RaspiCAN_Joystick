@@ -2,6 +2,8 @@
 
 In this project, we allow real vehicle CAN messages decoded on a Raspberry Pi to control and communicate with Live For Speed (LFS) running on a Windows machine. The method used in this section is a non-direct method and involves the use of an xbox360 emulator. Communication between the Raspberry Pi and Windows machine is wireless using UDP packets.
 
+The pub/sub from ROS is used for message communication. The raspberry pi is first loaded with Ubuntu 16.04 (LXDE) and ROS Kinetic installed and can be found [_here_](https://downloads.ubiquityrobotics.com/pi.html). ROS is used to make the development simple.
+
 ## Pre-requisite
 On the window's machine, download and install all the required drivers and emulators:
 
